@@ -9,7 +9,7 @@ function App() {
   const { token } = useAuth();
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/InterTask">
       <Routes>
         <Route path="/" element={token ? <Home /> : <Navigate to="/login" />} />
         <Route
